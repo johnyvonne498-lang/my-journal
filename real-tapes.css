@@ -1,0 +1,27 @@
+/* Real torn tape cutouts from the user's supplied photo. */
+.home-welcome:before,.home-task-summary:before,.habit-week-card:before,.side-note:before,.home-cat-photo:before,.wish-hero:before,.countdown-card:before,.journal-tape{background-color:transparent;border:0;box-shadow:none;clip-path:none;background-repeat:no-repeat;background-position:center;background-size:100% 100%;pointer-events:none;filter:drop-shadow(0 1px 1px #5e4c3420)}
+.home-welcome:before{background-image:url('./assets/tapes/orange-dot.png');width:112px;height:35px;top:-17px}
+.home-task-summary:before{background-image:url('./assets/tapes/red-stripe.png');width:77px;height:29px;top:-14px}
+.habit-week-card:before{background-image:url('./assets/tapes/blue-stripe.png');width:102px;height:31px;top:-16px}
+.side-note:before{background-image:url('./assets/tapes/cream.png');width:65px;height:21px;top:-10px;left:28%}
+.home-cat-photo:before{background-image:url('./assets/tapes/black-dot.png');width:71px;height:24px;top:-12px;left:25px}
+.wish-hero{overflow:visible}.wish-hero:before{background-image:url('./assets/tapes/sage.png');width:86px;height:33px;top:-16px}
+.countdown-card:before{background-image:url('./assets/tapes/cream.png');width:80px;height:24px;top:-12px}
+.countdown-card:nth-child(3n+2):before{background-image:url('./assets/tapes/silver.png')}
+.countdown-card:nth-child(3n):before{background-image:url('./assets/tapes/sage.png')}
+.home-habit-summary:after{background:url('./assets/tapes/black-dot.png') center/100% 100% no-repeat;width:52px;height:20px;border-radius:0;opacity:1;transform:rotate(-14deg)}
+.journal-tape{background-image:url('./assets/tapes/sky.png');width:94px;height:32px;top:-17px;left:calc(50% - 47px)}
+.journal-polaroid .journal-tape{background:transparent url('./assets/tapes/sage.png') center/100% 100% no-repeat;width:70px;height:26px;top:-14px;left:calc(50% - 35px)}
+.journal-polaroid:nth-child(6n+2) .journal-tape{background-image:url('./assets/tapes/red-stripe.png')}
+.journal-polaroid:nth-child(6n+3) .journal-tape{background-image:url('./assets/tapes/black-dot.png')}
+.journal-polaroid:nth-child(6n+4) .journal-tape{background-image:url('./assets/tapes/blue-stripe.png')}
+.journal-polaroid:nth-child(6n+5) .journal-tape{background-image:url('./assets/tapes/silver.png')}
+.journal-polaroid:nth-child(6n) .journal-tape{background-image:url('./assets/tapes/black.png')}
+.todo-sticker{filter:drop-shadow(0 2px 1px #6f553721)}
+.todo-sticker h2{background:transparent url('./assets/tapes/cream.png') center/100% 100% no-repeat;clip-path:none;color:#65533e}
+.journal-handwriting{background:transparent url('./assets/tapes/butter.png') center/100% 100% no-repeat;clip-path:none;color:#746448;padding:12px 25px 15px;filter:drop-shadow(0 2px 1px #6f553715)}
+.habit-week-sticker{background:transparent url('./assets/tapes/butter.png') center/100% 100% no-repeat;clip-path:none;border:0;border-radius:0;color:#796942;box-shadow:none;padding:11px 15px}
+@media(max-width:680px){.home-welcome:before{width:91px;height:29px;top:-14px}.habit-week-card:before{width:87px;height:27px;top:-14px}.journal-tape{width:78px;height:27px;left:calc(50% - 39px);top:-14px}.journal-polaroid .journal-tape{width:57px;height:22px;left:calc(50% - 28px);top:-12px}.home-habit-summary:after{width:43px;height:18px}}
+
+.joke-topline .home-kicker{background:transparent url('./assets/tapes/cream.png') center/100% 100% no-repeat;border-radius:0;padding:8px 12px;color:#6d684d}
+.countdown-card{overflow:visible}

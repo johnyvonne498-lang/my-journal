@@ -1,0 +1,27 @@
+/* Real clips cut from the supplied photograph, fastening the existing paper cards. */
+.home-welcome:before,.home-task-summary:before,.habit-week-card:before,.side-note:before,.home-cat-photo:before,.wish-hero:before,.countdown-card:before,.journal-tape,.journal-polaroid .journal-tape{background-color:transparent;background-size:contain;background-repeat:no-repeat;background-position:center;filter:drop-shadow(1px 2px 1px #59442d25);z-index:2}
+.home-welcome:before{background-image:url('./assets/clips/yellow-dot.png');width:46px;height:54px;top:-35px;left:43%;transform:rotate(-6deg)}
+.home-task-summary:before{background-image:url('./assets/clips/plaid.png');width:38px;height:46px;top:-29px;left:30px;transform:rotate(-7deg)}
+.habit-week-card:before{background-image:url('./assets/clips/mint.png');width:44px;height:53px;top:-34px;left:45%;transform:rotate(5deg)}
+.side-note:before{background-image:url('./assets/clips/flowers.png');width:29px;height:36px;top:-25px;left:27%;transform:rotate(-7deg)}
+.home-cat-photo:before{background-image:url('./assets/clips/patchwork.png');width:32px;height:40px;top:-26px;left:45px;transform:rotate(8deg)}
+.wish-hero:before{background-image:url('./assets/clips/flowers.png');width:45px;height:54px;top:-33px;transform:rotate(-5deg)}
+.countdown-card:before{background-image:url('./assets/clips/pink.png');width:37px;height:45px;top:-29px;left:44%;transform:rotate(-5deg)}
+.countdown-card:nth-child(3n+2):before{background-image:url('./assets/clips/lavender.png')}
+.countdown-card:nth-child(3n):before{background-image:url('./assets/clips/stars.png')}
+.home-habit-summary:after{background:transparent url('./assets/clips/lavender.png') center/contain no-repeat;left:45%;right:auto;top:-28px;bottom:auto;width:36px;height:44px;opacity:1;transform:rotate(8deg);pointer-events:none;filter:drop-shadow(1px 2px 1px #59442d25)}
+.journal-tape{background-image:url('./assets/clips/patchwork.png');width:43px;height:52px;top:-35px;left:calc(50% - 21px);transform:rotate(-5deg)}
+.journal-polaroid .journal-tape{background-image:url('./assets/clips/flowers.png');width:34px;height:42px;top:-28px;left:calc(50% - 17px)}
+.journal-polaroid:nth-child(6n+2) .journal-tape{background-image:url('./assets/clips/plaid.png')}
+.journal-polaroid:nth-child(6n+3) .journal-tape{background-image:url('./assets/clips/pink.png')}
+.journal-polaroid:nth-child(6n+4) .journal-tape{background-image:url('./assets/clips/mint.png')}
+.journal-polaroid:nth-child(6n+5) .journal-tape{background-image:url('./assets/clips/stars.png')}
+.journal-polaroid:nth-child(6n) .journal-tape{background-image:url('./assets/clips/red.png');width:47px;height:28px;top:-17px;left:calc(50% - 23px)}
+.journal-photo-grid{row-gap:38px}.journal-wall-heading{margin-bottom:36px}
+.todo-sticker:before{content:"";position:absolute;z-index:2;left:12px;top:-17px;width:25px;height:32px;background:url('./assets/clips/flowers.png') center/contain no-repeat;transform:rotate(-8deg);pointer-events:none;filter:drop-shadow(1px 1px 1px #59442d25)}
+@media(max-width:680px){.home-welcome:before{width:37px;height:46px;top:-29px;left:45%}.habit-week-card:before{width:36px;height:44px;top:-28px}.home-task-summary:before{width:32px;height:39px;top:-25px}.home-habit-summary:after{width:31px;height:38px;top:-24px}.journal-tape{width:36px;height:44px;top:-29px;left:calc(50% - 18px)}.journal-polaroid .journal-tape{width:29px;height:35px;top:-23px;left:calc(50% - 14px)}.journal-polaroid:nth-child(6n) .journal-tape{width:38px;height:23px;top:-14px;left:calc(50% - 19px)}.todo-sticker:before{width:21px;height:27px;top:-15px;left:9px}}
+
+@media(max-width:680px){.home-welcome.home-welcome{margin-top:30px}}
+
+/* Keep the cat companion note free of fastening decorations. */
+.side-note:before{display:none}

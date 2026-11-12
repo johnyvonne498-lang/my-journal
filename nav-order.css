@@ -1,0 +1,30 @@
+.nav-label.nav-sort-heading{display:flex;align-items:center;justify-content:space-between;gap:5px;letter-spacing:0;padding-right:7px}
+.nav-sort-heading>span{letter-spacing:1px;white-space:nowrap}
+.nav-sort-entry{font:11px var(--journal-hand);color:#9b967f;letter-spacing:0;white-space:nowrap;padding:4px 0;border-bottom:1px dotted #c8c2aa}
+.nav-sort-entry:hover{color:#687c55;border-color:#8e9d79}
+.nav-order-editor{font-family:var(--journal-hand);color:#73765e}
+.nav-order-hint{font:14px/1.9 var(--journal-hand);color:#96917a;margin-bottom:16px}
+.nav-order-list{padding:0;margin:0;list-style:none;display:grid;gap:7px}
+.nav-order-row{position:relative;display:flex;align-items:center;gap:12px;padding:10px 13px;border:1px solid #ded9c6;border-radius:7px;background:#fffdf5;cursor:grab;min-width:0}
+.nav-order-row:nth-child(even){background:#f7f6eac9}
+.nav-order-row:hover{border-color:#b9c4a2}
+.nav-order-grip{font:23px/1 Georgia,serif;color:#b9b7a0;user-select:none}
+.nav-order-number{font:10px Georgia,serif;color:#b0a991;width:15px;flex-shrink:0}
+.nav-order-name{display:flex;align-items:center;gap:10px;min-width:0;flex:1;font:17px/1.6 var(--journal-hand)}
+.nav-order-name>svg{width:18px;height:18px;flex-shrink:0;color:#929a7f}
+.nav-order-name>span{overflow-wrap:anywhere}
+.nav-order-moves{display:flex;gap:5px;flex-shrink:0}
+.nav-order-moves .icon-btn{border:1px solid #d8dcc7;background:#fffff8;color:#85976b;border-radius:6px;width:30px;height:30px}
+.nav-order-moves .icon-btn:disabled{opacity:.25;cursor:default}
+.nav-order-moves svg{width:14px;height:14px}
+.nav-order-row.is-dragging{opacity:.4;border-style:dashed}
+.nav-order-row.drop-before:before,.nav-order-row.drop-after:after{content:'';position:absolute;left:0;right:0;height:3px;background:#9aa974;border-radius:3px;pointer-events:none}
+.nav-order-row.drop-before:before{top:-6px}.nav-order-row.drop-after:after{bottom:-6px}
+.nav-order-status{font:12px/1.8 var(--journal-hand);color:#9a9d7d;margin-top:14px;min-height:22px}
+.nav-order-editor .modal-actions{margin-top:15px}
+.nav-sort-mobile{margin-top:17px;border-top:1px dashed #d7d4bf;padding-top:14px;text-align:center}
+.nav-sort-mobile>button{font:14px var(--journal-hand);color:#8c9776;border-bottom:1px dotted #b8c0a3;padding:4px 0}
+@media(max-width:960px) and (min-width:681px){.nav-sort-heading>span{font-size:10px;letter-spacing:0}.nav-sort-entry{font-size:10px}.nav-label.nav-sort-heading{padding-left:10px;padding-right:4px}}
+@media(max-width:680px){.nav-order-row{padding:11px 10px;gap:9px}.nav-order-name{font-size:16px;gap:8px}.nav-order-moves{gap:7px}.nav-order-moves .icon-btn{height:36px;width:36px}.nav-order-hint{font-size:13px}.nav-order-grip{font-size:22px}}
+
+.nav-order-moves svg{transform:rotate(90deg)}

@@ -1,0 +1,49 @@
+/* Photo stickers of the user's cat, decorating the workspace. */
+.cat-mascot{display:block;flex-shrink:0;overflow:visible}
+.cat-real{object-fit:contain;filter:drop-shadow(1px 1px 0 #fffdf7) drop-shadow(-1px -1px 0 #fffdf7) drop-shadow(0 3px 3px #7159451a)}
+.joke-cat.cat-mascot{width:78px;height:64px;transform:rotate(-7deg);filter:drop-shadow(0 3px 0 #fffdf8)}
+.brand-mark .cat-mascot.joke-cat{width:40px;height:36px;transform:rotate(-6deg)}
+.brand-mark{overflow:visible}
+.nav-link>.cat-mascot,.mobile-nav button>.cat-mascot{width:25px;height:23px}
+.side-note{position:relative;margin-top:58px}
+.side-note>.mascot-nap{position:absolute;width:103px;height:62px;top:-49px;right:8px;transform:rotate(3deg)}
+.side-footer .avatar{background:#f5e8bf;overflow:visible}
+.side-footer .avatar .cat-mascot{width:34px;height:30px}
+.home-overview>.home-section-heading{position:relative;min-height:74px;align-items:center;padding-right:177px}
+.desk-cat-nap{position:absolute;right:7px;bottom:0;display:flex;align-items:center;flex-direction:column;pointer-events:none}
+.desk-cat-nap>.cat-mascot{width:146px;height:81px;margin-top:-19px}
+.desk-cat-nap>span{font-size:9px;color:#a39780;letter-spacing:.5px;margin-top:-6px;white-space:nowrap}
+.tabby-companion .companion-cat{height:239px;width:222px;transform:rotate(-3deg);filter:drop-shadow(0 4px 0 #fffdf9);margin-bottom:0}
+.tabby-companion .companion-name{margin-top:2px;background:#fffdf3;color:#93816d;border-color:#d6c7b0}
+.tabby-companion .companion-cat.cat-real{transform:rotate(-4deg);padding:7px;filter:drop-shadow(2px 0 0 #fffdf7) drop-shadow(-2px 0 0 #fffdf7) drop-shadow(0 3px 0 #fffdf7) drop-shadow(0 6px 5px #7159451a)}
+.desk-cat-nap>.cat-real{width:154px;object-fit:contain;transform:rotate(-4deg)}
+.countdown-intro-cat .cat-mascot{width:105px;height:94px}
+.wish-hero-cat .cat-mascot{width:112px;height:112px;transform:rotate(5deg)}
+.journal-cat-note .cat-mascot{width:96px;height:86px;max-width:100%}
+.food-wheel-center .cat-mascot{width:52px;height:44px;transform:rotate(-5deg)}
+.is-petted .tabby-companion .cat-real{animation:real-cat-nudge .65s ease 2}
+@keyframes real-cat-nudge{0%,100%{transform:rotate(-4deg)}50%{transform:translateY(-5px) rotate(1deg)}}
+@media(max-width:1240px){.tabby-companion .companion-cat{width:190px;height:214px}}
+@media(max-width:960px) and (min-width:681px){.tabby-companion .companion-cat{width:153px;height:181px}}
+@media(max-width:680px){.joke-cat.cat-mascot{width:62px;height:53px}.home-overview>.home-section-heading{padding-right:116px;min-height:74px}.desk-cat-nap{right:0;bottom:3px}.desk-cat-nap>.cat-mascot{width:111px;height:65px}.desk-cat-nap>span{font-size:7px;letter-spacing:0}.tabby-companion .companion-cat{width:153px;height:166px;margin-top:3px}.tabby-companion .companion-name{margin-top:38px;font-size:9px;white-space:normal;max-width:133px;line-height:1.7}.wish-hero-cat .cat-mascot{width:73px;height:78px}.countdown-intro-cat .cat-mascot{width:77px;height:73px}.home-overview .home-example-label{font-size:8px;max-width:65px}.journal-cat-note .cat-mascot{width:85px;height:70px}}
+@media(prefers-reduced-motion:reduce){.is-petted .tabby-companion *{animation:none!important}}
+
+@media(max-width:680px){.desk-cat-nap>.cat-real{width:116px}}
+
+/* White-background source photos are edge-masked into transparent stickers. */
+.brand-mark .brand-cat-legs{width:43px;height:57px;object-fit:contain;transform:rotate(5deg)}
+.page-heading h1:has(.heading-cat){display:flex;align-items:center;gap:13px}
+.heading-cat{width:66px;height:49px;object-fit:contain;transform:rotate(5deg)}
+.new-home-entry .entry-cat{width:49px;height:46px;object-fit:contain}
+.weather-art{position:relative;padding-bottom:26px}
+.weather-art>.weather-cat{position:absolute;width:92px;height:73px;bottom:-8px;right:-3px;object-fit:contain}
+@media(max-width:680px){.heading-cat{width:48px;height:39px}.page-heading h1:has(.heading-cat){gap:10px}.new-home-entry .entry-cat{width:39px;height:39px}.weather-art>.weather-cat{width:77px;height:60px;bottom:-10px}}
+
+.brand{gap:8px}.brand .brand-mark{width:43px;min-width:43px;flex-shrink:0}.brand-mark .brand-cat-legs{width:43px;height:48px}
+/* Two more poses from the owner's photos: a close cuddle and a tucked-up cat. */
+.tabby-companion .companion-cat.mascot-cuddle{width:225px;height:222px;transform:rotate(-5deg);padding:0;object-fit:contain}
+.daily-habits-heading{position:relative;isolation:isolate}
+.habit-corner-cat{position:absolute;pointer-events:none;width:64px;height:95px;right:145px;bottom:-16px;transform:rotate(13deg);z-index:-1;opacity:.95}
+@media(max-width:1240px){.tabby-companion .companion-cat.mascot-cuddle{width:190px;height:190px}}
+@media(max-width:960px) and (min-width:681px){.tabby-companion .companion-cat.mascot-cuddle{width:153px;height:165px}.habit-corner-cat{right:125px;width:52px;height:79px}}
+@media(max-width:680px){.tabby-companion .companion-cat.mascot-cuddle{width:153px;height:151px}.habit-corner-cat{right:104px;bottom:-7px;width:38px;height:58px}.daily-habits-heading>div{position:relative;z-index:1}}

@@ -1,0 +1,48 @@
+/* Xiaolai (OFL): bundled with the app for consistent handwritten Chinese. */
+@font-face{font-family:LittleJournalHand;src:url('./assets/fonts/Xiaolai-journal.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
+:root{--journal-hand:LittleJournalHand,'Microsoft YaHei',sans-serif}
+.page-heading h1{font-family:var(--journal-hand);font-weight:400;letter-spacing:0}
+:root{--happy-fiber:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' opacity='.10' filter='url(%23n)'/%3E%3C/svg%3E")}
+/* Warm paper stationery shares the leather journal's scale and desk light. */
+.diary-shelf{grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:start;gap:36px;min-height:0;padding:16px 5% 10px;border:0;border-radius:0;background:none;overflow:visible}
+.diary-book-stage,.happy-companion{display:grid;grid-template-rows:56px 354px 92px;align-items:center;justify-items:center;gap:10px;min-width:0;padding:0;text-align:center}
+.diary-object-heading{align-self:start;width:100%;text-align:center;padding:0}
+.diary-shelf .diary-object-heading h2{font-family:var(--journal-hand);font-size:21px;font-weight:400;line-height:1.6;letter-spacing:0;color:#69533c;margin:0 0 4px}
+.diary-object-heading p{font-family:var(--journal-hand);font-size:12px;line-height:1.7;letter-spacing:0;color:#a08c72;margin:0}
+.diary-object,.happy-stationery{position:relative;display:grid;place-items:center;width:100%;height:100%;isolation:isolate}
+.diary-object:after,.happy-stationery:after{content:"";position:absolute;left:8%;right:6%;height:24px;bottom:7px;background:#6b472d17;filter:blur(13px);border-radius:50%;z-index:-1;transform:rotate(-3deg)}
+.diary-shelf .diary-closed{width:min(266px,93%);height:auto;margin:0;transform:rotate(-4deg)}
+.diary-shelf .diary-closed:hover{transform:rotate(-2deg) translateY(-4px)}
+.diary-shelf .diary-leather-photo{filter:drop-shadow(5px 10px 6px #63422226)}
+.happy-book-caption{align-self:start;width:100%;min-width:0;margin:5px 0 0;text-align:center}
+.diary-shelf .diary-open-button{font-size:11px;gap:18px;margin:3px 0 0;padding:10px 18px;border:1px solid #c3af91;background:#fffcf5;border-radius:3px;box-shadow:0 2px 2px #6c4b2220;color:#7b6143}
+.diary-shelf-note{justify-content:center;font-size:9px;letter-spacing:.5px;color:#a6937a;margin:11px 0 0}
+.happy-week-nav{display:flex;align-items:center;justify-content:center;gap:13px;width:100%;margin:0 0 8px;color:#8e785b}
+.happy-week-nav>span{font:400 13px/1.4 var(--journal-hand);letter-spacing:0}
+.happy-week-nav .icon-btn{width:20px;height:20px;color:#9a8466}.happy-week-nav svg{width:12px;height:12px}
+.happy-paper-stack{position:relative;isolation:isolate;width:min(244px,90%);padding:15px 12px 18px 15px;margin:0;background-color:#b89a70;background-image:linear-gradient(95deg,#6c4c2c20,transparent 10%,#f6e9d034 55%,#6c4c2c16),var(--happy-fiber);box-shadow:1px 1px 1px #f4e2c5 inset,3px 6px 7px #65422226;border-radius:2px 3px 2px 1px;transform:rotate(3deg)}
+.happy-paper-stack:before{content:"";position:absolute;inset:9px 9px 15px 12px;background:#efe5d0;transform:rotate(-1.7deg);box-shadow:1px 2px 2px #5a432b28;z-index:-1}
+.happy-paper-stack:after{content:"";position:absolute;left:5px;top:12px;bottom:12px;width:1px;border-left:1px dashed #f6e4c789;pointer-events:none}
+.happy-date-paper{--paper:#c99490;position:relative;display:block;width:100%;height:28px;padding:4px 17px 5px;text-align:left;color:#5b4a37;border-radius:1px;background-color:var(--paper);background-image:linear-gradient(180deg,#4e38220d,transparent 35%,#fff8df10),var(--happy-fiber);box-shadow:0 -1px 1px #785c3e25,0 1px 1px #62482b25;transform-origin:left center;transition:transform .18s,filter .18s}
+.happy-date-paper time{display:block;font:400 17px/1.2 var(--journal-hand);letter-spacing:0;font-variant-numeric:normal;transform:none;white-space:nowrap}
+.happy-date-paper.paper-1{--paper:#dfb088;transform:rotate(-.3deg)}.happy-date-paper.paper-2{--paper:#e3cf8a;transform:rotate(.25deg)}.happy-date-paper.paper-3{--paper:#a8b99a;transform:rotate(-.3deg)}.happy-date-paper.paper-4{--paper:#9fb7c3;transform:rotate(.2deg)}.happy-date-paper.paper-5{--paper:#b8a9c6;transform:rotate(-.3deg)}
+.happy-date-paper.paper-6{--paper:#e7ddc5;height:116px;padding-top:6px;display:flex;align-items:flex-start;transform:rotate(.2deg);background-image:linear-gradient(0deg,#ad8a4f09,transparent 70%,#80633e0f),var(--happy-fiber)}
+.happy-date-paper:last-child:after{content:"";position:absolute;right:1px;bottom:0;width:28px;height:8px;background:linear-gradient(160deg,transparent 50%,#f5e9cb 55%);filter:drop-shadow(-1px -1px 1px #89704b17)}
+.happy-date-paper:hover{transform:translateX(4px);filter:brightness(1.04)}.happy-date-paper:focus-visible{outline:2px solid #75593c;outline-offset:3px;z-index:2}
+.happy-stack-actions{display:flex;justify-content:center;align-items:center;gap:19px;flex-wrap:wrap}
+.diary-shelf .happy-stack-actions .primary{font-size:11px;font-weight:400;padding:7px 0 4px;background:none;color:#7b6143;border:0;border-bottom:1px solid #b5a184;border-radius:0;box-shadow:none}
+.diary-shelf .happy-stack-actions .primary:hover{color:#4c3926;border-color:#7b6143}
+.happy-stack-actions .text-btn{font-size:10px;color:#9d886a;padding:5px 0}
+.happy-editor-intro{font-size:12px;line-height:1.9;color:#a18c6c;margin:0 0 20px}.happy-note-editor .field textarea{background-color:#fffbed;background-image:repeating-linear-gradient(transparent 0 25px,#b9a47a1c 25px 26px);border-color:#e4d4a7;border-radius:3px;line-height:26px;padding-top:8px}.happy-form-error{font-size:12px;line-height:1.8;color:#b15140;white-space:pre-wrap}.happy-week-range{font-size:12px;color:#99805e;margin:0 0 16px}.happy-week-reading{max-height:35vh;overflow:auto;padding-right:8px;margin-bottom:22px;overscroll-behavior:contain}.happy-week-reading section{border-left:3px solid #dfb0a8;padding:7px 0 8px 14px;margin-bottom:12px}.happy-week-reading section:nth-child(2n){border-color:#a9bd96}.happy-week-reading section:nth-child(3n){border-color:#dcca7d}.happy-week-reading time{font:14px Georgia,serif;color:#7f6d50}.happy-week-reading ol{padding-left:18px;margin:8px 0 2px}.happy-week-reading li{font-size:12px;line-height:1.9;white-space:pre-wrap;overflow-wrap:anywhere;padding-left:3px;color:#716d57}.happy-unwritten{font-size:11px;color:#b4a78c;line-height:1.8;margin:8px 0 0}
+
+@media(min-width:1450px){.diary-shelf{max-width:880px;margin:0 auto;gap:70px;padding-top:26px}.diary-book-stage,.happy-companion{grid-template-rows:56px 390px 92px}.diary-shelf .diary-closed{width:286px}.happy-paper-stack{width:258px;padding-top:18px;padding-bottom:20px}.happy-date-paper{height:30px}.happy-date-paper.paper-6{height:124px}}
+@media(min-width:681px) and (max-width:850px){.diary-shelf{gap:15px;padding-left:0;padding-right:0}.diary-book-stage,.happy-companion{grid-template-rows:56px 310px 92px}.diary-shelf .diary-object-heading h2{font-size:17px}.diary-object-heading p{font-size:9px}.diary-shelf .diary-closed{width:230px}.happy-paper-stack{width:208px;padding:12px 10px 14px 13px}.happy-date-paper{height:25px;padding-left:13px}.happy-date-paper time{font-size:16px}.happy-date-paper.paper-6{height:102px}}
+@media(max-width:680px){.diary-shelf{grid-template-columns:1fr;gap:35px;padding:10px 8px 20px}.diary-book-stage,.happy-companion{width:100%;grid-template-rows:51px 302px 75px;gap:7px}.diary-shelf .diary-object-heading h2{font-size:20px}.diary-object-heading p{font-size:10px}.diary-shelf .diary-closed{width:226px}.happy-companion{grid-template-rows:51px 329px 75px}.happy-paper-stack{width:231px}.happy-book-caption{margin-top:2px}.diary-shelf .diary-open-button{margin-top:0}.diary-shelf-note{margin-top:9px}.happy-week-reading{max-height:32vh}.happy-note-editor .field textarea{font-size:15px}}
+@media(prefers-reduced-motion:reduce){.happy-date-paper,.diary-shelf .diary-closed{transition:none}}
+
+.diary-shelf .diary-open-button{font-family:var(--journal-hand);font-size:14px;font-weight:400}
+.diary-shelf .happy-stack-actions .primary{font-family:var(--journal-hand);font-size:14px;font-weight:400}
+.diary-shelf .happy-stack-actions .text-btn{font-family:var(--journal-hand);font-size:13px}
+.diary-shelf-note{font-family:var(--journal-hand);font-size:11px;letter-spacing:0}
+.journal-month-control{font-family:var(--journal-hand)}
+.journal-month-control .journal-month-label strong{font-weight:400}
